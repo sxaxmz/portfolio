@@ -1,0 +1,222 @@
+.footer {
+        width: 100%;
+        background-color: #000;
+        height: 100%;
+        padding-bottom: 7px;
+        margin-top: 100px;
+}
+
+.footer img {
+	margin-bottom: 8px;
+}
+
+.footer  a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer a {
+	color: #5E6C7D;
+}
+
+.footer-items {
+	margin-top: 30px;
+}
+
+.center {
+	margin: 5px auto;
+	text-align: center;
+}
+
+.headers {
+	font-family: fantasy;
+	margin: 15px auto;
+}
+
+.images {
+	margin: 20px auto;
+	border: 2px block #585955;
+	border-radius: 6em;
+	-webkit-box-shadow: #000;
+	-moz-box-shadow: #000;
+	box-shadow: #000;
+}
+
+body {
+	background-color: #E5E5E5;
+	box-shadow:
+		inset 60px 0 250px #E5E5E5,
+	    inset 60px 0 120px #a3a1a1,
+	    inset -60px 0 120px #bcbcbc,
+	    inset -60px 0 250px #a3a1a1;
+}
+
+#About p {
+	margin: 20px auto;
+	font-family: Cambria, Georgia, serif;
+	font-size: 19px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.info {
+	width: 400px;
+}
+
+.fixed {
+	position: fixed;
+	width: 100%;
+	z-index:2000;
+	background-color: #686e72;
+	box-shadow:
+	    inset 60px 0 120px #686e72,
+	    inset -60px 0 120px #8d9aa3;
+}
+
+.nav-link {
+	width: 400px;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	border-top: none;
+	border-bottom: none;
+}
+
+.nav-link:hover {
+	background-color: #8d9aa3;
+	color: #000000;
+	border-color: #585955;
+	--link-hover-color: #6ad9ec
+}
+
+.nav-pills .nav-item .nav-link.active {
+	background-color: #8d9aa3;
+	border-color: #585955;
+	color: #000;
+}
+
+.home {
+	width: 30px;
+	border-style: none;
+}
+
+#Projects {
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.projectsInfo {
+	font-family: Cambria, Georgia, serif;
+	font-size: 19px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 25px;
+}
+
+#contactInfo {
+	
+}
+
+#Skills {
+	height: 220px;
+}
+
+.content {
+	padding-top: 40px;
+}
+
+#Projects , #Skills , #contactInfo {
+	color: #000;
+	margin-bottom: 20px;
+	width: 75%;
+}
+
+#Projects hr , #Skills hr, #contactInfo  hr{
+	width: 70%;
+	background-color: #000;
+}
+
+.cardText {
+	color: #000000;
+	margin: 15px;
+    width: 100%;
+    font-family: Cambria, Georgia, serif;
+	font-size: 19px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.card:hover {
+	-webkit-box-shadow: #000000;
+	-moz-box-shadow: #000000;
+	box-shadow: #000000;
+}
+
+.card-img-top {
+	background-color: #F8F8F8;
+}
+
+.card-footer {
+	height: 10px;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
+}
+
+.progLang {
+	float: left;
+}
+
+.progLang p {
+	font-family: fantasy;
+	font-size: 18px;
+}
+
+.card-title {
+	font-weight: Bold;
+}
+
+.container-contact {
+    text-align: center;
+    margin: 15px auto; 
+    border: 1px #000000 solid;
+    border-radius: 5em;
+    opacity: 0.8;
+    width: 500px;
+}
+
+.container-contact label {
+  margin: 5px; 
+  float: left;
+}
+
+.container-contact input {
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 490px;
+}
+
+.container-contact textarea {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 490px;
+  resize: none;
+}
+
+.container-contact button {
+  margin-bottom: 15px;
+  width: 90px;
+}
