@@ -45,4 +45,20 @@ var fieldMissing = "";
                 $(this).children(".card-footer").css("background-color", "#f7f7f7");
             });
 
+      $(".menu-nav").click(function () {
+                $(".fixed").css("height", "auto");
+                $(".projectTab").css("background-color", "#585955");
+            });
+
+      $(".menu-nav-item").click(function () {
+                $(".fixed").css("height", "50px");
+                var tabName = $(this).html();
+                $(".projectTab").html(tabName);
+            });
+
+      $(".projectTab").click(function () {
+                $(".fixed").css("height", "auto");
+                $(".projectTab").css("background-color", "#585955");
+            });
+
 });

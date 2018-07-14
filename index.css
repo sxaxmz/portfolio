@@ -220,3 +220,196 @@ body {
   margin-bottom: 15px;
   width: 90px;
 }
+
+.menu-nav {
+	display: none;
+}
+
+.tabName {
+    	display: none;
+}
+
+@media all and (min-width: 1000px) and (max-width:1300px) {
+	.menu-nav {
+		display: block;
+		margin-right: 290px;
+		margin-top: 5px;
+	}
+
+	.home {
+		display: none;
+	}
+
+	.tabName {
+		display: block;
+		font-weight: Bold;
+	}
+    .projectTab {
+    	margin-right: 290px;
+    	background-color: #585955;
+    }
+
+    .fixed {
+    	height: 50px;
+    	overflow: hidden;
+    }
+}
+
+@media all and (min-width: 700px) and (max-width:1000px) {
+	.menu-nav {
+		display: block;
+		margin-right: 135px;
+		margin-top: 5px;
+	}
+
+	.home {
+		display: none;
+	}
+
+	.tabName {
+		display: block;
+		font-weight: Bold;
+	}
+    .projectTab {
+    	margin-right: 180px;
+    }
+
+    .fixed {
+    	height: 50px;
+    	overflow: hidden;
+    }
+}
+
+
+@media all and (min-width: 500px) and (max-width:700px) {
+	.menu-nav {
+		display: block;
+		margin-right: 135px;
+		margin-top: 5px;
+	}
+
+	.home {
+		display: none;
+	}
+
+	.tabName {
+		display: block;
+		font-weight: Bold;
+	}
+    .projectTab {
+    	margin-right: 180px;
+    }
+
+    .fixed {
+    	height: 50px;
+    	overflow: hidden;
+    }
+}
+
+@media all and (max-width:500px) and (min-width:421px){
+	.home {
+		display: none;
+	}
+}
+
+@media all and (max-width:420px) and (min-width:371px){
+	.menu-nav {
+		display: block;
+		margin-right: 330px;
+		margin-top: 5px;
+	}
+
+	.home {
+		display: none;
+	}
+
+    .fixed {
+    	height: 50px;
+    	overflow: hidden;
+    }
+
+	#About {
+		margin-top: 70px;
+	}
+
+	.progLang {
+		float: none;
+		margin: 15px;
+	}
+
+	#Skills {
+		height: auto;
+	}
+
+	.content {
+		padding-top: 1px;
+	}
+
+	.footer {
+		margin-top: 68px;
+	}
+
+	#About p {
+	margin: 20px auto;
+	margin-left: 40px; 
+	font-family: Cambria, Georgia, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 20px;
+	width: 300px;
+	}
+}
+
+@media all and (max-width:370px){
+	.menu-nav {
+		display: block;
+		margin-right: 330px;
+		margin-top: 5px;
+	}
+
+	.home {
+		display: none;
+	}
+
+    .fixed {
+    	height: 50px;
+    	overflow: hidden;
+    }
+
+	#About {
+		margin-top: 70px;
+	}
+
+	.progLang {
+		float: none;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+	.progLang p {
+		display: none;
+	}
+
+	#Skills {
+		height: auto;
+	}
+
+	.content {
+		padding-top: 1px;
+	}
+
+	.footer {
+		margin-top: 68px;
+	}
+
+	#About p {
+	margin: 20px auto;
+	margin-left: 30px; 
+	font-family: Cambria, Georgia, serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	overflow: auto;
+	width: 280px;
+	}
+}
