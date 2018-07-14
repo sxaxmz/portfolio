@@ -1,9 +1,11 @@
 .footer {
         width: 100%;
         background-color: #000;
-        height: 100%;
+        height: 120px;
         padding-bottom: 7px;
         margin-top: 100px;
+        position:fixed;
+	    bottom:0;
 }
 
 .footer img {
@@ -43,6 +45,8 @@
 }
 
 body {
+	height:auto!important;
+    min-height:100vh;
 	background-color: #E5E5E5;
 	box-shadow:
 		inset 60px 0 250px #E5E5E5,
@@ -131,7 +135,7 @@ body {
 
 #Projects , #Skills , #contactInfo {
 	color: #000;
-	margin-bottom: 20px;
+	margin-bottom: 120px;
 	width: 75%;
 }
 
@@ -229,7 +233,7 @@ body {
     	display: none;
 }
 
-@media all and (min-width: 1000px) and (max-width:1300px) {
+@media all and (min-width: 1024px) and (max-width:1300px) {
 	.menu-nav {
 		display: block;
 		margin-right: 290px;
@@ -253,9 +257,14 @@ body {
     	height: 50px;
     	overflow: hidden;
     }
+
+    .footer {
+		margin-top: 80px;
+		padding-bottom: 122px;
+	}
 }
 
-@media all and (min-width: 700px) and (max-width:1000px) {
+@media all and (min-width: 720px) and (max-width:1023px) {
 	.menu-nav {
 		display: block;
 		margin-right: 135px;
@@ -278,10 +287,14 @@ body {
     	height: 50px;
     	overflow: hidden;
     }
+
+    .footer {
+		margin-top: 68px;
+	}
 }
 
 
-@media all and (min-width: 500px) and (max-width:700px) {
+@media all and (min-width: 500px) and (max-width:719px) {
 	.menu-nav {
 		display: block;
 		margin-right: 135px;
@@ -304,12 +317,40 @@ body {
     	height: 50px;
     	overflow: hidden;
     }
+
+    .footer {
+		margin-top: 68px;
+	}
 }
 
 @media all and (max-width:500px) and (min-width:421px){
+	.menu-nav {
+		display: block;
+		margin-right: 135px;
+		margin-top: 5px;
+	}
+
 	.home {
 		display: none;
 	}
+
+	.tabName {
+		display: block;
+		font-weight: Bold;
+	}
+    .projectTab {
+    	margin-right: 180px;
+    }
+
+    .fixed {
+    	height: 50px;
+    	overflow: hidden;
+    }
+
+    .footer {
+		margin-top: 68px;
+	}
+
 }
 
 @media all and (max-width:420px) and (min-width:371px){
@@ -347,6 +388,7 @@ body {
 
 	.footer {
 		margin-top: 68px;
+		padding-bottom: 56px;
 	}
 
 	#About p {
