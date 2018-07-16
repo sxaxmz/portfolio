@@ -118,8 +118,23 @@
 		<div id="contactInfo" class="center tab-pane fade show" aria-labelledby="pills-contact-tab" role="tabpanel" >
 			<hr>
 			<h2 class="headers">CONTACT</h2>
-				<p> For any enquire(s) or request(s) get in touch through <br> <span style="color: #00aaa7;">osamathadon@gmail.com</span> </p>
+			<!--
+				<p> For any enquire(s) or request(s) get in touch through <br> <span style="color: #00aaa7;">osamathadon@gmail.com</span> </p> -->
 				<!--<?php include('contactForm.php'); ?> -->
+
+			<div class="container-contact">
+		      <h2> Get in touch </h2>
+		      <div id="error" ></div>
+		      <div id="missing" ></div>
+					<form action="http://formspree.io/osamathadon@gmail.com" method="POST">
+						  <input id="emailFrom" type="email" class="form-control"  name="_replyto" placeholder="Enter the email">
+					      <input id="emailSubject" type="text" class="form-control" name="_subject" placeholder="Email subject">
+					      <textarea id="emailMsg" type="text" class="form-control" row="8" name="body" placeholder="Enter your message"></textarea>
+					      <input type="text" name="_gotcha" style="display:none" />
+						  <button type="submit" value="Send" class="btn btn-primary btn-send">Send</button>
+					</form>
+			</div>
+
 		</div>
 	</div>
 
