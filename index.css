@@ -44,18 +44,6 @@
 	box-shadow: #000;
 }
 
-body {
-	width: 100%
-	height:auto!important;
-    min-height:100vh;
-	background-color: #E5E5E5;
-	box-shadow:
-		inset 60px 0 250px #E5E5E5,
-	    inset 60px 0 120px #a3a1a1,
-	    inset -60px 0 120px #bcbcbc,
-	    inset -60px 0 250px #a3a1a1;
-}
-
 #About p {
 	margin: 20px auto;
 	font-family: Cambria, Georgia, serif;
@@ -132,6 +120,15 @@ body {
 
 .content {
 	padding-top: 40px;
+    background-color: #E5E5E5;
+	box-shadow:
+		inset 60px 0 250px #E5E5E5,
+	    inset 60px 0 120px #a3a1a1,
+	    inset -60px 0 120px #bcbcbc,
+	    inset -60px 0 250px #a3a1a1;
+    height: 100%!important;
+    min-height: 100vh;
+    width: auto !important;  
 }
 
 #Projects , #Skills , #contactInfo {
@@ -271,12 +268,53 @@ body {
 		margin-top: 80px;
 		padding-bottom: 122px;
 	}
+
+	.container-contact {
+	  text-align: center;
+	  margin: 15px auto; 
+	  border: 1px #000000 solid;
+      border-radius: 5em;
+	  opacity: 0.8;
+	  width: 65%;
+	}
+
+	.container-contact label {
+	  margin: 8px; 
+	  float: left;
+	}
+
+	.container-contact input {
+	  margin: 8px auto; 
+	  border-radius: 2em;
+	  padding: 10px;
+	  width: 65%;
+	}
+
+	.container-contact textarea {
+	  border-radius: 2em;
+	  margin: 8px auto;
+	  width: 65%;
+	  height: 150px;
+	  resize: none;
+	}
+
+	.container-contact button {
+	  margin-top: 15px; 
+	  margin-bottom: 15px;
+	  width: 65%;
+	}
+
+	.container-contact div {
+		border-radius: 2em;
+		width: 65%;
+		margin: 5px auto;
+	}
 }
 
 @media all and (min-width: 720px) and (max-width:1023px) {
 	.menu-nav {
 		display: block;
-		margin-right: 135px;
+		margin-right: 80%;
 		margin-top: 5px;
 	}
 
@@ -299,11 +337,56 @@ body {
 
     .footer {
 		margin-top: 68px;
+	}
+
+	.container-contact {
+	  text-align: center;
+	  margin: 15px auto; 
+	  border: 1px #000000 solid;
+      border-radius: 5em;
+	  opacity: 0.8;
+	  width: 65%;
+	}
+
+	.container-contact label {
+	  margin: 8px; 
+	  float: left;
+	}
+
+	.container-contact input {
+	  margin: 8px auto; 
+	  border-radius: 2em;
+	  padding: 10px;
+	  width: 65%;
+	}
+
+	.container-contact textarea {
+	  border-radius: 2em;
+	  margin: 8px auto;
+	  width: 65%;
+	  height: 150px;
+	  resize: none;
+	}
+
+	.container-contact button {
+	  margin-top: 15px; 
+	  margin-bottom: 15px;
+	  width: 65%;
+	}
+
+	.container-contact div {
+		border-radius: 2em;
+		width: 65%;
+		margin: 5px auto;
 	}
 }
 
 
 @media all and (min-width: 500px) and (max-width:719px) {
+	.content {
+		min-height: 110vh;
+	    min-width: 111vw;
+	}
 	.menu-nav {
 		display: block;
 		margin-right: 135px;
@@ -329,10 +412,56 @@ body {
 
     .footer {
 		margin-top: 68px;
+	}
+
+	.container-contact {
+	  text-align: center;
+	  margin: 15px auto; 
+	  border: 1px #000000 solid;
+      border-radius: 2em;
+	  opacity: 0.8;
+	  width: 85%;
+	}
+
+	.container-contact label {
+	  margin: 8px; 
+	  float: left;
+	}
+
+	.container-contact input {
+	  margin: 8px auto; 
+	  border-radius: 2em;
+	  padding: 10px;
+	  width: 85%;
+	}
+
+	.container-contact textarea {
+	  border-radius: 2em;
+	  margin: 8px auto;
+	  width: 85%;
+	  height: 150px;
+	  resize: none;
+	}
+
+	.container-contact button {
+	  margin-top: 15px; 
+	  margin-bottom: 15px;
+	  width: 65%;
+	  border-radius: 2em;
+	}
+
+	.container-contact div {
+		border-radius: 2em;
+		width: 65%;
+		margin: 5px auto;
 	}
 }
 
-@media all and (max-width:500px) and (min-width:421px){
+@media all and (max-width:499px) and (min-width:421px){
+	.content {
+		min-height: 110vh;
+	    min-width: 111vw;
+	}
 	.menu-nav {
 		display: block;
 		margin-right: 135px;
@@ -358,6 +487,48 @@ body {
 
     .footer {
 		margin-top: 68px;
+	}
+
+	.container-contact {
+	  text-align: center;
+	  margin: 15px auto; 
+	  border: 1px #000000 solid;
+      border-radius: 2em;
+	  opacity: 0.8;
+	  width: 85%;
+	}
+
+	.container-contact label {
+	  margin: 8px; 
+	  float: left;
+	}
+
+	.container-contact input {
+	  margin: 8px auto; 
+	  border-radius: 2em;
+	  padding: 10px;
+	  width: 85%;
+	}
+
+	.container-contact textarea {
+	  border-radius: 2em;
+	  margin: 8px auto;
+	  width: 85%;
+	  height: 150px;
+	  resize: none;
+	}
+
+	.container-contact button {
+	  margin-top: 15px; 
+	  margin-bottom: 15px;
+	  width: 65%;
+	  border-radius: 2em;
+	}
+
+	.container-contact div {
+		border-radius: 2em;
+		width: 65%;
+		margin: 5px auto;
 	}
 
 }
@@ -376,7 +547,12 @@ body {
     .fixed {
     	height: 50px;
     	overflow: hidden;
+    	margin-bottom: 50px;
     }
+
+    .nav-link {
+		width: 100%;
+	}
 
 	#About {
 		margin-top: 70px;
@@ -393,6 +569,8 @@ body {
 
 	.content {
 		padding-top: 1px;
+		min-height: 110vh;
+	    min-width: 111vw;
 	}
 
 	.footer {
@@ -408,6 +586,48 @@ body {
 	font-weight: 400;
 	line-height: 20px;
 	width: 300px;
+	}
+
+	.container-contact {
+	  text-align: center;
+	  margin: 15px auto; 
+	  border: 1px #000000 solid;
+      border-radius: 2em;
+	  opacity: 0.8;
+	  width: 85%;
+	}
+
+	.container-contact label {
+	  margin: 8px; 
+	  float: left;
+	}
+
+	.container-contact input {
+	  margin: 8px auto; 
+	  border-radius: 2em;
+	  padding: 10px;
+	  width: 85%;
+	}
+
+	.container-contact textarea {
+	  border-radius: 2em;
+	  margin: 8px auto;
+	  width: 85%;
+	  height: 150px;
+	  resize: none;
+	}
+
+	.container-contact button {
+	  margin-top: 15px; 
+	  margin-bottom: 15px;
+	  width: 65%;
+	  border-radius: 2em;
+	}
+
+	.container-contact div {
+		border-radius: 2em;
+		width: 65%;
+		margin: 5px auto;
 	}
 }
 
@@ -425,7 +645,13 @@ body {
     .fixed {
     	height: 50px;
     	overflow: hidden;
+    	width: 100%;
+    	margin-bottom: 50px;
     }
+
+    .nav-link {
+		width: 100%;
+	}
 
 	#About {
 		margin-top: 70px;
@@ -447,6 +673,8 @@ body {
 
 	.content {
 		padding-top: 1px;
+		min-height: 110vh;
+	    min-width: 111vw;
 	}
 
 	.footer {
@@ -460,7 +688,54 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
-	overflow: auto;
-	width: 280px;
+	width: 90%;
+	}
+
+	.container-contact {
+	  text-align: center;
+	  margin: 15px auto; 
+	  border: 1px #000000 solid;
+      border-radius: 5em;
+	  opacity: 0.8;
+	  width: 100%;
+	}
+
+	.container-contact h2 {
+		font-size: 24px;
+		font-weight: Bold;
+		font-family: fantasy;
+	}
+
+	.container-contact label {
+	  margin: 8px; 
+	  float: left;
+	}
+
+	.container-contact input {
+	  margin: 8px auto; 
+	  border-radius: 2em;
+	  padding: 10px;
+	  width: 95%;
+	}
+
+	.container-contact textarea {
+	  border-radius: 2em;
+	  margin: 8px auto;
+	  width: 95%;
+	  height: 150px;
+	  resize: none;
+	}
+
+	.container-contact button {
+	  margin-top: 15px; 
+	  margin-bottom: 15px;
+	  width: 65%;
+	  border-radius: 2em;
+	}
+
+	.container-contact div {
+		border-radius: 2em;
+		width: 75%;
+		margin: 5px auto;
 	}
 }
