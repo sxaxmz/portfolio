@@ -134,7 +134,7 @@
 #Projects , #Skills , #contactInfo {
 	color: #000;
 	margin-bottom: 120px;
-	padding-bottom: 5%;
+	padding-bottom: 8%;
 	width: 75%;
 }
 
@@ -339,6 +339,15 @@
 		margin-top: 68px;
 	}
 
+	.progLang {
+		float: left;
+		margin-bottom: 15px;
+	}
+
+	.progLang p {
+		display: none;
+	}
+
 	.container-contact {
 	  text-align: center;
 	  margin: 15px auto; 
@@ -389,7 +398,7 @@
 	}
 	.menu-nav {
 		display: block;
-		margin-right: 135px;
+		margin-right: 600px;
 		margin-top: 5px;
 	}
 
@@ -398,7 +407,7 @@
 	}
 
 	.tabName {
-		display: block;
+		display: none;
 		font-weight: Bold;
 	}
     .projectTab {
@@ -412,6 +421,15 @@
 
     .footer {
 		margin-top: 68px;
+	}
+
+	.progLang {
+		float: left;
+		margin-bottom: 15px;
+	}
+
+	.progLang p {
+		display: none;
 	}
 
 	.container-contact {
@@ -473,7 +491,7 @@
 	}
 
 	.tabName {
-		display: block;
+		display: none;
 		font-weight: Bold;
 	}
     .projectTab {
@@ -487,6 +505,12 @@
 
     .footer {
 		margin-top: 68px;
+	}
+
+	.progLang {
+		float: none;
+		margin-top: 35px;
+		margin-bottom: 35px;
 	}
 
 	.container-contact {
