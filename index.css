@@ -69,7 +69,7 @@
 }
 
 .nav-link {
-	width: 400px;
+	width: 325px;
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	border-top: none;
@@ -114,6 +114,10 @@
 	
 }
 
+#Education {
+	height: 280px;
+}
+
 #Skills {
 	height: 220px;
 }
@@ -131,14 +135,14 @@
     width: auto !important;  
 }
 
-#Projects , #Skills , #contactInfo {
+#Projects , #Skills , #contactInfo, #Education {
 	color: #000;
 	margin-bottom: 120px;
 	padding-bottom: 8%;
 	width: 75%;
 }
 
-#Projects hr , #Skills hr, #contactInfo  hr{
+#Projects hr , #Skills hr, #contactInfo  hr, #Education hr{
 	width: 70%;
 	background-color: #000;
 }
@@ -185,6 +189,19 @@
 .progLang p {
 	font-family: fantasy;
 	font-size: 18px;
+}
+
+.education-section {
+	margin-right: 15px;
+}
+
+.education-section p {
+	font-family: fantasy;
+	font-size: 16px;
+}
+
+.education-section span {
+	font-size: 12px;
 }
 
 .card-title {
@@ -253,9 +270,11 @@
 	.tabName {
 		display: block;
 		font-weight: Bold;
+		margin-left: 131px;
 	}
+
     .projectTab {
-    	margin-right: 290px;
+    	margin-right: 330px;
     	background-color: #585955;
     }
 
@@ -325,9 +344,10 @@
 	.tabName {
 		display: block;
 		font-weight: Bold;
+		margin-left: 165px;
 	}
     .projectTab {
-    	margin-right: 180px;
+    	margin-right: 270px;
     }
 
     .fixed {
@@ -419,12 +439,15 @@
     	overflow: hidden;
     }
 
+    .nav-link {
+		width: 100%;
+	}
+
     .footer {
 		margin-top: 68px;
 	}
 
 	.progLang {
-		float: left;
 		margin-bottom: 15px;
 	}
 
@@ -482,7 +505,7 @@
 	}
 	.menu-nav {
 		display: block;
-		margin-right: 135px;
+		margin-right: 365px;
 		margin-top: 5px;
 	}
 
@@ -503,14 +526,39 @@
     	overflow: hidden;
     }
 
+    .nav-link {
+		width: 100%;
+	}
+
     .footer {
 		margin-top: 68px;
 	}
 
+	#About p {
+	margin: 5px auto;
+	margin-left: 40px; 
+	font-family: Cambria, Georgia, serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 20px;
+	width: 300px;
+	}
+
+	#Education {
+		height: auto;
+	}
+
+	#Skills {
+		height: auto;
+	}
+
 	.progLang {
 		float: none;
-		margin-top: 35px;
-		margin-bottom: 35px;
+		margin: 15px;
+	}
+
+	.progLang p {
+		display: none;
 	}
 
 	.container-contact {
@@ -579,12 +627,20 @@
 	}
 
 	#About {
-		margin-top: 70px;
+		margin-top: 75px;
 	}
 
 	.progLang {
 		float: none;
 		margin: 15px;
+	}
+
+	.progLang p {
+		display: none;
+	}
+
+	#Education {
+		height: auto;
 	}
 
 	#Skills {
@@ -678,7 +734,7 @@
 	}
 
 	#About {
-		margin-top: 70px;
+		margin-top: 75px;
 	}
 
 	.progLang {
@@ -689,6 +745,10 @@
 
 	.progLang p {
 		display: none;
+	}
+
+	#Education {
+		height: auto;
 	}
 
 	#Skills {
@@ -707,7 +767,7 @@
 
 	#About p {
 	margin: 20px auto;
-	margin-left: 30px; 
+	margin-right: 38px; 
 	font-family: Cambria, Georgia, serif;
 	font-size: 16px;
 	font-weight: 400;
