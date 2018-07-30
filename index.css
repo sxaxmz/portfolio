@@ -163,6 +163,11 @@
 	background-color: #d5d5d5;
 }
 
+.card-footer {
+	height: 10px;
+	background-color: #d5d5d5 !important;
+}
+
 .card:hover {
 	-webkit-box-shadow: #000000;
 	-moz-box-shadow: #000000;
@@ -174,9 +179,8 @@
 	background-color: #000;
 }
 
-.card-footer {
-	height: 10px;
-	background-color: #d5d5d5 !important;
+.card:hover .card-footer {
+	background-color: #000 !important;
 }
 
 .card-columns {
