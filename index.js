@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+  $(".eachCard").css({'margin-bottom': '+=15px', 'padding-right': '-=15px' , 'padding-left': '-=15px'});
+
 var errormsg = "";
 var fieldMissing = "";
 
@@ -41,8 +44,8 @@ var fieldMissing = "";
                 $(this).animate({marginBottom: "-=15px", paddingRight: "+15px", paddingLeft: "+15px"},200);
                 $(this).children(".card-footer").css("background-color", "#000000");
             }, function(){
-                $(this).animate({ marginBottom: "+=15px", paddingRight: "-15px", paddingLeft: "-15px"},200);
-                $(this).children(".card-footer").css("background-color", "#f7f7f7");
+                $(this).animate({ marginBottom: "+=15px", paddingRight: "-=15px", paddingLeft: "-=15px"},200);
+                $(this).children(".card-footer").css("background-color", "#d5d5d5");
             });
 
       $(".menu-nav").click(function () {
