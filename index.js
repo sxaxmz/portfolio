@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  var siteContent = document.getElementById("projectContent");
+  var content,images,title,description,url;
+  cardDeck(title,description,images,url);
+  
   $(".eachCard").css({'margin-bottom': '+=15px', 'padding-right': '-=15px' , 'padding-left': '-=15px'});
 
 var errormsg = "";
@@ -42,10 +46,8 @@ var fieldMissing = "";
 
       $(".eachCard").hover( function(){
                 $(this).animate({marginBottom: "-=15px", paddingRight: "+15px", paddingLeft: "+15px"},200);
-                $(this).children(".card-footer").css("background-color", "#000000");
             }, function(){
                 $(this).animate({ marginBottom: "+=15px", paddingRight: "-=15px", paddingLeft: "-=15px"},200);
-                $(this).children(".card-footer").css("background-color", "#d5d5d5");
             });
 
       $(".menu-nav").click(function () {
@@ -64,4 +66,50 @@ var fieldMissing = "";
                 $(".projectTab").css("background-color", "#585955");
             });
 
+function cardDeck (title,description,images,url){
+
+  content = '<div class="card-deck center cardText">';
+
+    jsonToCard(title,description,images,url);
+
+  content += '</div>';
+
+  siteContent.innerHTML = content;
+}
+
+function jsonToCard(title,description,images,url){       
+  var json = JSON.parse(data);
+  json.forEach(function(item,index,array){
+     images = item['img']; 
+     title = item['title'];
+     description = item['desc'];
+     url = item['url'];
+     deployCards(title,description,images,url,index);
+
+      console.log(images+" <--images-->"+index);
+      console.log(url+" <--url-->"+index);
+      console.log(title+" <--title-->"+index);
+      console.log(description+" <--description-->"+index);
+      console.log("##########");     
+  });
+}
+
+function deployCards(title,description,images,url,count) {
+  if (count > 3) {
+        content += '</div>'+
+              '<div class="card-deck center cardText">';
+        count = 0;
+      }  
+   content +=         '<div class="card eachCard col-sm-12 col-xs-12">'+
+                      ' <a target="_blank "href="'+url+'"><img class="card-img-top" src="images/'+images+'" width="181" height="200px" alt="'+title+'"></a>'+
+                      ' <div class="card-body">'+
+                      '    <h5 class="card-title">'+title+'</h5>'+
+                      '    <p class="card-text" id="description">'+description+'</p>'+
+                      '  </div>'+
+                      '  <div class="card-footer">'+
+                      '  </div>'+
+                      '</div>';
+      count++; 
+      console.log("Count -->"+count);       
+}
 });

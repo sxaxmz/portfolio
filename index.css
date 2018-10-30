@@ -147,6 +147,10 @@
 	background-color: #000;
 }
 
+.card {
+	max-width: 23% !important;
+}
+
 .cardText {
 	color: #000000;
 	margin: 15px;
