@@ -3,3 +3,9 @@ var data =  '[ {"id": "01", "title": "Message/Blog", "url" : "https://sxaxmz.git
 			'  {"id": "03", "title": "Raction Time Tester", "url" : "https://sxaxmz.github.io/ReactionTimeTester", "img" :"reaction-time.svg", "desc" : "This is a simple game to help track/improve the reaction time of the user."},'+
 			'  {"id": "04", "title": "JSON Manipulator", "url" : "https://github.com/sxaxmz/JSON-Manipulator", "img" :"JM.png", "desc" : "Simple Android app that allows the user to manipulate a set of JSON data-set a through a UI and perform simple analytics."},'+
 			'  {"id": "05", "title": "Watch-Online", "url" : "https://sxaxmz.github.io/watch-online/", "img" :"watch-online.png", "desc" : "A simple template for watch-online sites."}]'
+
+
+var languages = '[ {"id":"01", "name":"HTML", "img":"html.png"},'+
+				' {"id":"02", "name":"CSS", "img":"css.png"},'+
+				' {"id":"03", "name":"JavaScript", "img":"js.png"},'+
+				' {"id":"04", "name":"Java", "img":"java.png"}]'

@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
   var siteContent = document.getElementById("projectContent");
-  var content,images,title,description,url;
+  var progLangContent = document.getElementById("progLangContent");
+  var content,images,title,description,url,name;
   cardDeck(title,description,images,url);
+  progLang(name,images);
   
   $(".eachCard").css({'margin-bottom': '+=15px', 'padding-right': '-=15px' , 'padding-left': '-=15px'});
 
@@ -111,5 +113,36 @@ function deployCards(title,description,images,url,count) {
                       '</div>';
       count++; 
       console.log("Count -->"+count);       
+}
+
+function progLang (name,images){
+
+  content = '<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">';
+
+    progLangJson(name,images);
+
+  content += '</div>';
+
+  progLangContent.innerHTML = content;
+}
+
+function progLangJson(name,images){       
+  var json = JSON.parse(languages);
+  json.forEach(function(item,index,array){
+     images = item['img']; 
+     name = item['name'];
+     deployHTML(name,images);
+
+      console.log(images+" <--images-->"+index);
+      console.log(name+" <--name-->"+index);
+      console.log("##########");     
+  });
+}
+
+function deployHTML(name,images) { 
+   content +=         '<div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 progLang">'+
+                      '<p>'+name+'</p>'+
+                      '<img src="images/'+images+'" alt="'+name+'" width="62px" height="62px">'+ 
+                      '</div>';    
 }
 });
