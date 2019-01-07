@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var siteContent = document.getElementById("projectContent");
   var progLangContent = document.getElementById("progLangContent");
-  var content,images,title,description,url,name;
+  var content,images,title,description,url,name,count;
   cardDeck(title,description,images,url);
   progLang(name,images);
   
@@ -81,23 +81,18 @@ function cardDeck (title,description,images,url){
 
 function jsonToCard(title,description,images,url){       
   var json = JSON.parse(data);
+  count = 0;
   json.forEach(function(item,index,array){
      images = item['img']; 
      title = item['title'];
      description = item['desc'];
      url = item['url'];
-     deployCards(title,description,images,url,index);
-
-      console.log(images+" <--images-->"+index);
-      console.log(url+" <--url-->"+index);
-      console.log(title+" <--title-->"+index);
-      console.log(description+" <--description-->"+index);
-      console.log("##########");     
+     deployCards(title,description,images,url);   
   });
 }
 
-function deployCards(title,description,images,url,count) {
-  if (count > 3) {
+function deployCards(title,description,images,url) {
+  if (count > 2) {
         content += '</div>'+
               '<div class="card-deck center cardText">';
         count = 0;
@@ -131,11 +126,7 @@ function progLangJson(name,images){
   json.forEach(function(item,index,array){
      images = item['img']; 
      name = item['name'];
-     deployHTML(name,images);
-
-      console.log(images+" <--images-->"+index);
-      console.log(name+" <--name-->"+index);
-      console.log("##########");     
+     deployHTML(name,images);     
   });
 }
 
