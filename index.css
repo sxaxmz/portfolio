@@ -139,7 +139,7 @@
 	color: #000;
 	margin-bottom: 120px;
 	padding-bottom: 8%;
-	width: 75%;
+	max-width: 85%;
 }
 
 #Projects hr , #Skills hr, #contactInfo  hr, #Education hr{
@@ -148,13 +148,12 @@
 }
 
 .card {
-	max-width: 30% !important;
+	max-width: 75% !important;
 }
 
 .cardText {
 	color: #000000;
 	margin: 15px;
-    width: 100%;
     font-family: Cambria, Georgia, serif;
 	font-size: 19px;
 	font-style: normal;
@@ -189,11 +188,11 @@
 
 .card-columns {
   @include media-breakpoint-only(lg) {
-    column-count: 4;
+    column-count: 3;
   }
 
   @include media-breakpoint-only(xl) {
-    column-count: 4;
+    column-count: 3;
   }
 }
 

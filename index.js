@@ -70,7 +70,7 @@ var fieldMissing = "";
 
 function cardDeck (title,description,images,url){
 
-  content = '<div class="card-deck center cardText">';
+  content = '<div class="card-deck center cardText row">';
 
     jsonToCard(title,description,images,url);
 
@@ -94,10 +94,10 @@ function jsonToCard(title,description,images,url){
 function deployCards(title,description,images,url) {
   if (count > 2) {
         content += '</div>'+
-              '<div class="card-deck center cardText">';
+              '<div class="card-deck center cardText row">';
         count = 0;
       }  
-   content +=         '<div class="card eachCard col-sm-12 col-xs-12">'+
+   content +=         '<div class="card eachCard center col-sm-12 col-xs-12">'+
                       ' <a target="_blank "href="'+url+'"><img class="card-img-top" src="images/'+images+'" width="181" height="200px" alt="'+title+'"></a>'+
                       ' <div class="card-body">'+
                       '    <h5 class="card-title">'+title+'</h5>'+
