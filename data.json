@@ -4,11 +4,13 @@ var data =  '[ {"id": "01", "title": "Message/Blog", "url" : "https://sxaxmz.git
 			'  {"id": "04", "title": "JSON Manipulator", "url" : "https://github.com/sxaxmz/JSON-Manipulator", "img" :"JM.png", "desc" : "Simple Android app that allows the user to manipulate a set of JSON data-set a through a UI and perform simple analytics."},'+
 			'  {"id": "05", "title": "Watch-Online", "url" : "https://sxaxmz.github.io/watch-online/", "img" :"watch-online.png", "desc" : "A simple template for watch-online sites."},'+
 		        '  {"id": "06", "title": "Corporate Website", "url" : "https://sxaxmz.github.io/CorporateWebsite/", "img" :"logo4.png", "desc" : "Website template that can be modified through JSON -Similar concept to CMS-"},'+
-                        '  {"id": "07", "title": "eLib", "url" : "https://github.com/sxaxmz/eLib", "img" :"eLib.png", "desc" : "Electronic Book Library developed using Flask (Python Web Framework)."} '+
+                        '  {"id": "07", "title": "eLib", "url" : "https://github.com/sxaxmz/eLib", "img" :"eLib.png", "desc" : "Electronic Book Library developed using Flask (Python Web Framework)."}, '+
                         '  {"id": "08", "title": "Numbers-Hand-Gesture-Recognition", "url" : "https://github.com/sxaxmz/Numbers-Hand-Gesture-Recognition", "img" :"number_hand_gesture_recognition.png", "desc" : "Train a neural Network model using PyTorch to recognize numbers from a hand gesture"}]'
 
 
 var languages = '[ {"id":"01", "name":"HTML", "img":"html.png"},'+
 				' {"id":"02", "name":"CSS", "img":"css.png"},'+
 				' {"id":"03", "name":"JavaScript", "img":"js.png"},'+
-				' {"id":"04", "name":"Java", "img":"java.png"}]'
+				' {"id":"04", "name":"Java", "img":"java.png"}, '+
+				' {"id":"05", "name":"Python", "img":"python.png"}, '+
+				' {"id":"06", "name":"C++", "img":"c++.png"}]'
